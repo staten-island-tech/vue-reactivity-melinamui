@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <img :src="{ image }" alt="" />
+  </div>
 </template>
 
 <script>
