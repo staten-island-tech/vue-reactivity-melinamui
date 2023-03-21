@@ -4,6 +4,8 @@ import router from './router'
 
 import './assets/main.css'
 
+import './array'
+
 const app = createApp(App)
 
 app.use(router)
