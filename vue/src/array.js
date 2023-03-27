@@ -1,4 +1,14 @@
+import { createApp } from 'vue'
+
 const menu = [
+  {
+    name: 'Salmon Maki',
+    image: '../images/salmon roll.jpg'
+  },
+  {
+    name: 'Tuna Maki',
+    image: '../images/tuna roll.jpg'
+  },
   {
     name: 'Tuna Nigiri',
     image: '../images/tuna roll.jpg'
@@ -7,6 +17,10 @@ const menu = [
   {
     name: 'Shrimp Nigiri',
     image: '../images/shrimp nigiri.jpg'
+  },
+  {
+    name: 'Roe Nigiri',
+    image: '../images/roe .jpg'
   },
   {
     name: 'Salmon Sashimi',
@@ -22,11 +36,19 @@ const menu = [
   },
   {
     name: 'Salmon Uramaki',
-    image: '../images salmon uramaki.jpg'
+    image: '../images/salmon uramaki.jpg'
   },
   {
     name: 'Shrimp Uramki',
-    image: '..images shrimp uramaki.jpg'
+    image: '../images/shrimp uramaki.jpg'
+  },
+  {
+    name: 'Avocado and Salmon Temaki',
+    image: '../images/avocade and salmon temaki.jpg'
+  },
+  {
+    name: 'Tuna Temaki',
+    image: '../images/tuna hand roll.jpg'
   }
 ]
 console.log(menu)
