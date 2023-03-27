@@ -15,6 +15,18 @@ const menu = [
   {
     name: 'Tuna Sashimi',
     image: '../images/tuna sashimi.jpg'
+  },
+  {
+    name: 'Tamago',
+    image: '../images/tamago .jpg'
+  },
+  {
+    name: 'Salmon Uramaki',
+    image: '../images salmon uramaki.jpg'
+  },
+  {
+    name: 'Shrimp Uramki',
+    image: '..images shrimp uramaki.jpg'
   }
 ]
 console.log(menu)
