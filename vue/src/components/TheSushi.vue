@@ -1,15 +1,13 @@
 <template>
   <h2>{{ cart.length }} in Cart</h2>
-  <button>View Cart</button>
   <h1>Menu</h1>
   <div class="menu">
   <div v-for="menu in menu"
   :key="menu.name">
-  {{ menu.name }}
-  <img :src="menu.image"/>
-  {{ menu.cost }}
+  {{ menu.name }}</div>
+  <img alt="{{ menu.name }}" :src="menu.image"/>
+  <div>{{ menu.cost }}</div>
   <button v-on:click="addtocart(menu)">Add to Cart</button>
-  </div>
 </div>
 </template>
 
