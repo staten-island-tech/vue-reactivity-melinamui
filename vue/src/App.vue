@@ -4,101 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>-->
 
-<template>
-  <h1>Menu</h1>
-  <div class="menu">
-  <div v-for="menu in menu"
-  :key="menu.name">
-  {{ menu.name }}
-  <img :src="menu.image"/>
-  {{ menu.cost }}
-  <button>Add to Cart</button>
-  </div>
-</div>
-</template>
 
-<script>
-export default {
-  name: "App",
-  data: () => {
-  return {
-    menu : [
-{
-  name: 'Salmon Maki',
-  image: '../images/salmon roll.jpg',
-  cost: "1 Soul",
-},
-{
-  name: 'Tuna Maki',
-  image: '../images/tuna roll.jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Tuna Nigiri',
-  image: '../images/tuna roll.jpg',
-  cost: "1 Soul"
-},
-{ name: 'Tamago Nigiri', image: '../images/tamago nigiri.jpg',
-cost: "1 Soul" },
-{
-  name: 'Shrimp Nigiri',
-  image: '../images/shrimp nigiri.jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Roe Nigiri',
-  image: '../images/roe .jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Salmon Sashimi',
-  image: '../images/salmon sashimi.jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Tuna Sashimi',
-  image: '../images/tuna sashimi.jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Tamago',
-  image: '../images/tamago .jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Salmon Uramaki',
-  image: '../images/salmon uramaki.jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Shrimp Uramki',
-  image: '../images/shrimp uramaki.jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Avocado and Salmon Temaki',
-  image: '../images/avocade and salmon temaki.jpg',
-  cost: "1 Soul"
-},
-{
-  name: 'Tuna Temaki',
-  image: '../images/tuna hand roll.jpg',
-  cost: "1 Soul"
-}
-]
-  }
-}}
-</script>
-
-<style scoped>
-.menu {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-</style>
-
-<!--
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -107,8 +13,8 @@ cost: "1 Soul" },
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/menu">Menu</RouterLink>
+        <RouterLink to="/cart">Cart</RouterLink>
       </nav>
     </div>
   </header>
@@ -179,4 +85,3 @@ nav a:first-of-type {
   }
 }
 </style>
--->
