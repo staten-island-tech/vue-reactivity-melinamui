@@ -4,10 +4,11 @@
   <div class="menu">
   <div v-for="menu in menu"
   :key="menu.name">
-  {{ menu.name }}</div>
+  {{ menu.name }}
   <img :src="menu.image"/>
   <div>{{ menu.cost }}</div>
   <button v-on:click="addtocart(menu)">Add to Cart</button>
+</div>
 </div>
 </template>
 
