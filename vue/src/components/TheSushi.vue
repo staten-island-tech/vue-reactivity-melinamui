@@ -5,7 +5,7 @@
   <div v-for="menu in menu"
   :key="menu.name">
   {{ menu.name }}</div>
-  <img alt="{{ menu.name }}" :src="menu.image"/>
+  <img :src="menu.image" alt="{{ menu.name }}" width="500" height="500" />
   <div>{{ menu.cost }}</div>
   <button v-on:click="addtocart(menu)">Add to Cart</button>
 </div>
