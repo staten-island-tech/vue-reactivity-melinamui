@@ -1,9 +1,9 @@
 <script>
-import MenuView from './MenuView.vue';
+import TheSushi from '../components/TheSushi.vue';
 </script>
 
 <template>
-  <MenuView></MenuView>
+  <TheSushi></TheSushi>
   <h2>{{ cart.length }} in Cart</h2>
   <div v-if="view === 'cart'">
     <h1>Your Cart</h1>
