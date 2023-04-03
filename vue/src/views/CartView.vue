@@ -1,7 +1,7 @@
 <script>
 import MenuView from './MenuView.vue';
 </script>
-
+<!--
 <template>
   <MenuView></MenuView>
   <div v-if="page === cart">
@@ -16,3 +16,4 @@ import MenuView from './MenuView.vue';
     </div>
   </div>
 </template>
+-->
