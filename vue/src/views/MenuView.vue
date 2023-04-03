@@ -4,7 +4,6 @@ import TheSushi from '../components/TheSushi.vue';
 
 <template>
   <h2>{{ cart.length }} in Cart</h2>
-  <div v-if="page === menu">
     <h1>Menu</h1>
     <div class="menu">
       <div v-for="menu in menu" :key="menu.name">
@@ -14,7 +13,6 @@ import TheSushi from '../components/TheSushi.vue';
         <button v-on:click="addtocart(menu)">Add to Cart</button>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
