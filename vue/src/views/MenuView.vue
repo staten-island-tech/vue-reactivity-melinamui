@@ -4,7 +4,8 @@ import TheSushi from '../components/TheSushi.vue';
 
 <template>
   <h2>{{ cart.length }} in Cart</h2>
-    <h1>Menu</h1>
+  <div v-if="view==='menu'"> 
+  <h1>Menu</h1>
     <div class="menu">
       <div v-for="menu in menu" :key="menu.name">
         {{ menu.name }}
@@ -13,6 +14,7 @@ import TheSushi from '../components/TheSushi.vue';
         <button v-on:click="addtocart(menu)">Add to Cart</button>
       </div>
     </div>
+  </div> 
 </template>
 
 <script>
@@ -20,7 +22,7 @@ export default {
   name: "App",
   data: () => {
     return {
-      page: "menu",
+      view: "menu",
       cart: [],
       menu: [
         {
@@ -93,7 +95,6 @@ export default {
   methods: {
     addtocart(menu) {
       this.cart.push(menu);
-
     }
   },
   components: {}

@@ -4,7 +4,9 @@ import MenuView from './MenuView.vue';
 
 <template>
   <MenuView></MenuView>
-    <h1>Menu</h1>
+  <h2>{{ cart.length }} in Cart</h2>
+  <div v-if="view === 'cart'">
+    <h1>Your Cart</h1>
     <div class="menu">
       <div v-for="menu in cart" :key="menu.name">
         {{ menu.name }}
