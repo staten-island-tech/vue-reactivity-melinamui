@@ -6,7 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <h1>Menu</h1>
-  <div>
+  <div class="menu">
   <div v-for="menu in menu"
   :key="menu.name">
   {{ menu.name }}
@@ -90,7 +90,13 @@ cost: "1 Soul" },
 }}
 </script>
 
-
+<style scoped>
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+</style>
 
 <!--
 <template>
