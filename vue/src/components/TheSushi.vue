@@ -1,4 +1,3 @@
-
 <template>
   <h2>{{ cart.length }} in Cart</h2>
   <button>View Cart</button>
@@ -19,6 +18,7 @@ export default {
   name: "App",
   data: () => {
   return {
+    page: "menu",
     cart: [],
     menu : [
 {

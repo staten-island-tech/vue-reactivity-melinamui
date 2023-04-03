@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<!--
+
 <style>
 @media (min-width: 1024px) {
   .about {
@@ -13,4 +13,4 @@
     align-items: center;
   }
 }
-</style>-->
+</style>
