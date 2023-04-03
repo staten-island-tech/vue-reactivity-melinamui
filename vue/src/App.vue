@@ -1,7 +1,8 @@
+<!--
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-</script>
+</script>-->
 
 <template>
   <h1>Menu</h1>
