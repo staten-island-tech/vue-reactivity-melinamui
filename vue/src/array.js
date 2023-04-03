@@ -1,5 +1,3 @@
-import { createApp } from 'vue'
-
 const menu = [
   {
     name: 'Salmon Maki',
